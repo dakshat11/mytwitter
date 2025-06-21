@@ -72,10 +72,3 @@ def register(request):
 
 from django.contrib.auth import get_user_model
 
-def create_admin_user():
-    User = get_user_model()
-    if not User.objects.filter(username="daksh").exists():
-        User.objects.create_superuser("daksh", "dakshatpawale8@gmail.com", "dakshat111")
-        print("Superuser created!")
-
-create_admin_user()
