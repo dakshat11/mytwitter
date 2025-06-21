@@ -1,0 +1,44 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders (common names)
+.venv/
+venv/
+env/
+ENV/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+
+# Database
+db.sqlite3
+db.sqlite
+
+# Static files (collected)
+staticfiles/
+
+# Media uploads
+media/
+
+# Environment variables file
+.env
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS files
+.DS_Store
+
+# Render specific
+render.yaml
+
+# Others
+*.swp
