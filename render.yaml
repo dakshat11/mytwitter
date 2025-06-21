@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: django-twitter-clone
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash -c "python manage.py migrate && gunicorn mytwitter.wsgi:application"
+
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: mytwitter.settings
+      - key: PYTHON_VERSION
+        value: 3.10
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: django-twitter-db
+          property: connectionString
+
+envVars:
+  - key: DATABASE_URL
+    fromDatabase:
+      name: django-twitter-db
+      property: connectionString
