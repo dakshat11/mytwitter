@@ -38,7 +38,7 @@ media/
 .DS_Store
 
 # Render specific
-# render.yaml
+render.yaml
 
 # Others
 *.swp
