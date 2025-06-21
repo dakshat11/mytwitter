@@ -156,5 +156,5 @@ LOGOUT_REDIRECT_URL = '/tweet/'
 
 
 # addded for render
-ALLOWED_HOSTS = ['mytwitter-mj12.onrender.com'] 
+ALLOWED_HOSTS = ['mytwitter-z1oj.onrender.com'] 
 
